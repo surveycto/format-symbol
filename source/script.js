@@ -3,6 +3,21 @@ var isWebCollect = (document.body.className.indexOf("web-collect") >= 0);
 var isAndroid = (document.body.className.indexOf("android-collect") >= 0);
 var isIOS = (document.body.className.indexOf("ios-collect") >= 0);
 
+var symbol = getPluginParameter("symbol") // Gets the value provided in the parameter called symbol
+var placement = getPluginParameter("placement") // Gets the value provided in the parameter called placement
+var startLabel = document.querySelector("#symbol-start") // Creates a dynamic reference to the label whose id is symbol-start
+var endLabel = document.querySelector("#symbol-end") // Creates a dynamic reference to the label whose id is symbol-end
+
+// Determine the placement based on value provided
+if (placement === "end") { // If the value of placement is end
+    endLabel.textContent = symbol // set the text in the end label to the symbol provided
+    endLabel.classList.remove("hideSymbol") // Remove the hideSymbol class from the end label (make the end label visible)
+    startLabel.classList.add("hideSymbol") // Add the hideSymbol class to the start label (hide the start label)
+} else { // If the value of palcement is NOT end (it can be start or if the value is not provided i.e. default)
+    startLabel.textContent = symbol // set the text in the start label to the symbol provided
+}
+
+
 // Find the input element
 var input = document.getElementById('decimal-field');
 
