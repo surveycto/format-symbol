@@ -41,6 +41,11 @@
 
 <!-- if the field is not marked read only, show the input box always. -->
 {{^READONLY}}
+<label 
+    id="symbol-start" 
+    for="decimal-field"
+    class="symbol" 
+></label>
 <input 
     type="text" 
     pattern = "[0-9]*" 
@@ -55,4 +60,10 @@
       placeholder="Your answer here..."
     {{/QUESTION_PLACEHOLDER_LABEL}} 
 />
+<label 
+    id="symbol-end" 
+    for="decimal-field"
+    class="symbol hideSymbol" 
+>
+</label>
 {{/READONLY}}

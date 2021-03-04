@@ -1,12 +1,12 @@
-# Baseline decimal field
+# Format symbol
 
-![Screenshot](extras/baseline-decimal.jpg)
+![Screenshot](extras/format-symbl.png)
 
 ## Description
 
-A simple replacement for the default *decimal* field, plus a few improvements (see below). You can either download and use this as-is, or you can use it as a starting template when creating your own field plug-in for a *decimal* field.
+This field plug-in is designed to display a symbol either before or after an input field.
 
-[![Download now](extras/download-button.png)](https://github.com/surveycto/baseline-decimal/raw/master/baseline-decimal.fieldplugin.zip)
+[![Download now](extras/download-button.png)](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip)
 
 ### Features
 
@@ -25,7 +25,7 @@ This field plug-in requires the `decimal` field type.
 
 ### Getting started
 
-**To use this plug-in as-is**, just download the [baseline-decimal.fieldplugin.zip](https://github.com/surveycto/baseline-decimal/raw/master/baseline-decimal.fieldplugin.zip) file from this repo, specify this field plug-in as a custom field appearance in the form design (like in the [test form](https://github.com/surveycto/baseline-decimal/raw/master/extras/test-form/test-form-package.zip)), and attach it to your form. For more details about using field plug-ins, please read the [user documentation](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html).
+**To use this plug-in as-is**, just download the [format-symbol.fieldplugin.zip](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip) file from this repo, specify this field plug-in as a custom field appearance in the form design (like in the [sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/)), and attach it to your form. For more details about using field plug-ins, please read the [user documentation](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html).
 
 **To create your own** field plug-in using this as a template, follow these steps:
 
@@ -46,7 +46,6 @@ For more information about developing your own field plug-ins, please read the [
 | Default values | Yes |
 | Constraint message | Uses default behavior |
 | Required message | Uses default behavior |
-| Read only | Yes *(shows the current value, if present)* |
 | media:image | Yes |
 | media:audio | Yes |
 | media:video | Yes |
@@ -54,19 +53,20 @@ For more information about developing your own field plug-ins, please read the [
 
 ### Parameters
 
-**Note about the keyboard on iOS:**  
-iOS has a less-consistent way of determining which on-screen keyboard to display than Android. If you plan on using this plug-in on iOS, you should test your form on the actual iOS device that you plan on using. If the wrong keyboard appears (for example, if there is no minus button available), you may supply an optional parameter to the plug-in to set the keyboard type manually.
-
 | Parameter key | Parameter value |
 | --- | --- |
-| `ios-inputmode` | Possible values: `none`, `text`, `decimal`, `numeric`, `tel`, `search`, `email`, `url`. [Click here for more information about the inputmode attibute.](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode)|
+| `symbol` | The symbol to be displayed.|
+| `placement` | The positioning of they symbol. This can be take two value: <br> <ol><li>`start` (default) - the symbol is on the left of the input box. </li><li>`end` - the symbol is on the right of the input box.</li></ol>|
+
+### Example
+To display a percent symbol at the end of the textbox, the following would be placed in the appearance column of the spreadsheet form definition:
+
+custom-format-symbol(symbol='%', placement='end')
 
 ## More resources
 
-* **Test form**  
-This form will help you explore the differences between this field plug-in and the default text field.  
-[Download test form package](https://github.com/surveycto/baseline-decimal/raw/master/extras/test-form/test-form-package.zip)  
-[Instructions for test form](/extras/test-form/README.md)
+* **Sample form**   
+[Download sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/test-form-package.zip)  
 
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
