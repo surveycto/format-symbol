@@ -17,7 +17,6 @@ if (placement === "end") { // If the value of placement is end
     startLabel.textContent = symbol // set the text in the start label to the symbol provided
 }
 
-
 // Find the input element
 var input = document.getElementById('decimal-field');
 
