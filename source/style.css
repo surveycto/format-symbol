@@ -12,7 +12,7 @@
 
 .response {
     /* add style rules here to change how the response appears */
-    width: 80%;
+    width: 80%; /* adjust this width to resize the input box*/
     margin: .5rem 0;
     padding: .5rem;
     border: 1px solid #047CC2;
@@ -26,10 +26,12 @@
     border: 1px solid rgba(0,0,0,.3);
 }
 
+/* classes below added for format symbol field plug-in */
 .symbol {
-    font-weight: bold;
+    font-weight: bold; /*makes the text bold*/
 }
 
 .hideSymbol {
-    display: none;
+    display: none; /*hides the element to which it is applied*/
 }
+/* classes for format symbol field plug-in end here */
