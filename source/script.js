@@ -3,8 +3,11 @@ var isWebCollect = (document.body.className.indexOf("web-collect") >= 0);
 var isAndroid = (document.body.className.indexOf("android-collect") >= 0);
 var isIOS = (document.body.className.indexOf("ios-collect") >= 0);
 
+// Parameters
 var symbol = getPluginParameter("symbol") // Gets the value provided in the parameter called symbol
 var placement = getPluginParameter("placement") // Gets the value provided in the parameter called placement
+
+// Dynamic element variables
 var leftLabel = document.querySelector("#symbol-left") // Creates a dynamic reference to the label whose id is symbol-left
 var rightLabel = document.querySelector("#symbol-right") // Creates a dynamic reference to the label whose id is symbol-right
 
@@ -13,7 +16,7 @@ if (placement === "right") { // If the value of placement is right
     rightLabel.textContent = symbol // set the text in the right label to the symbol provided
     rightLabel.classList.remove("hide-symbol") // Remove the hide-symbol class from the right label (make the right label visible)
     leftLabel.classList.add("hide-symbol") // Add the hide-symbol class to the left label (hide the left label)
-} else { // If the value of palcement is NOT "right" (it can be left or if the value is not provided i.e. default)
+} else { // If the value of placement is NOT "right" (it can be left or if the value is not provided i.e. default)
     leftLabel.textContent = symbol // set the text in the left label to the symbol provided
 }
 
