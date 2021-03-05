@@ -41,13 +41,13 @@
 
 <!-- if the field is not marked read only, show the input box always. -->
 {{^READONLY}}
-<!-- This is the start label which shows on the left of the input box. It has the following attributes:
+<!-- This is the label which shows on the left of the input box. It has the following attributes:
         id - name of the label element used to refer to it in the JavaScript code.
         for - the input element it is attached to (here its the one below).
         class - used to point to the CSS class to be applied
 -->
 <label 
-    id="symbol-start" 
+    id="symbol-left" 
     for="decimal-field"
     class="symbol" 
 ></label>
@@ -69,7 +69,7 @@
 <!-- Second label starts here. It displays on the right of the input box when enabled. It is hidden by default because of the extra
 CSS class called hide-symbol (check the CSS file for this class)-->
 <label 
-    id="symbol-end" 
+    id="symbol-right" 
     for="decimal-field"
     class="symbol hide-symbol" 
 >

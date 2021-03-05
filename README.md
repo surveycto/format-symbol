@@ -4,7 +4,7 @@
 
 ## Description
 
-This field plug-in is designed to display a symbol either before or after an input field.
+This field plug-in is designed to display a symbol either before or after an input field. It was developed for a field plug-in development demonstration for beginners which you can learn more about in this [recorded webinar](https://www.surveycto.com/videos/plugin-dev-webinar/) and in [this Support Center article](https://support.surveycto.com/hc/en-us/articles/360063734953).
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip)
 
@@ -33,12 +33,12 @@ This field plug-in requires the `decimal` field type.
 | Parameter key | Parameter value |
 | --- | --- |
 | `symbol` | The symbol to be displayed.|
-| `placement` | The positioning of they symbol. This can be take two value: <br> <ol><li>`start` (default) - the symbol is on the left of the input box. </li><li>`end` - the symbol is on the right of the input box.</li></ol>|
+| `placement` | The positioning of they symbol. This can be take two value: <br> <ol><li>`left` (default) - the symbol is on the left of the input box. </li><li>`right` - the symbol is on the right of the input box.</li></ol>|
 
 ### Example
 To display a percent symbol on the right of the textbox, the following would be placed in the appearance column of the spreadsheet form definition:
 
-`custom-format-symbol(symbol='%', placement='end')`
+`custom-format-symbol(symbol='%', placement='right')`
 
 ### Default SurveyCTO feature support
 
