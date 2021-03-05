@@ -5,16 +5,16 @@ var isIOS = (document.body.className.indexOf("ios-collect") >= 0);
 
 var symbol = getPluginParameter("symbol") // Gets the value provided in the parameter called symbol
 var placement = getPluginParameter("placement") // Gets the value provided in the parameter called placement
-var startLabel = document.querySelector("#symbol-start") // Creates a dynamic reference to the label whose id is symbol-start
-var endLabel = document.querySelector("#symbol-end") // Creates a dynamic reference to the label whose id is symbol-end
+var leftLabel = document.querySelector("#symbol-left") // Creates a dynamic reference to the label whose id is symbol-left
+var rightLabel = document.querySelector("#symbol-right") // Creates a dynamic reference to the label whose id is symbol-right
 
 // Determine the placement based on value provided
-if (placement === "end") { // If the value of placement is end
-    endLabel.textContent = symbol // set the text in the end label to the symbol provided
-    endLabel.classList.remove("hide-symbol") // Remove the hide-symbol class from the end label (make the end label visible)
-    startLabel.classList.add("hide-symbol") // Add the hide-symbol class to the start label (hide the start label)
-} else { // If the value of palcement is NOT end (it can be start or if the value is not provided i.e. default)
-    startLabel.textContent = symbol // set the text in the start label to the symbol provided
+if (placement === "right") { // If the value of placement is right
+    rightLabel.textContent = symbol // set the text in the right label to the symbol provided
+    rightLabel.classList.remove("hide-symbol") // Remove the hide-symbol class from the right label (make the right label visible)
+    leftLabel.classList.add("hide-symbol") // Add the hide-symbol class to the left label (hide the left label)
+} else { // If the value of palcement is NOT "right" (it can be left or if the value is not provided i.e. default)
+    leftLabel.textContent = symbol // set the text in the left label to the symbol provided
 }
 
 // Find the input element

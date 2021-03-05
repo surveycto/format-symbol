@@ -33,12 +33,12 @@ This field plug-in requires the `decimal` field type.
 | Parameter key | Parameter value |
 | --- | --- |
 | `symbol` | The symbol to be displayed.|
-| `placement` | The positioning of they symbol. This can be take two value: <br> <ol><li>`start` (default) - the symbol is on the left of the input box. </li><li>`end` - the symbol is on the right of the input box.</li></ol>|
+| `placement` | The positioning of they symbol. This can be take two value: <br> <ol><li>`left` (default) - the symbol is on the left of the input box. </li><li>`right` - the symbol is on the right of the input box.</li></ol>|
 
 ### Example
 To display a percent symbol on the right of the textbox, the following would be placed in the appearance column of the spreadsheet form definition:
 
-`custom-format-symbol(symbol='%', placement='end')`
+`custom-format-symbol(symbol='%', placement='right')`
 
 ### Default SurveyCTO feature support
 
