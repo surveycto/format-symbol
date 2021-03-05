@@ -31,7 +31,7 @@
     font-weight: bold; /*makes the text bold*/
 }
 
-.hideSymbol {
+.hide-symbol {
     display: none; /*hides the element to which it is applied*/
 }
 /* classes for format symbol field plug-in end here */
