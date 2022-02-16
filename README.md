@@ -56,7 +56,7 @@ To display a percent symbol on the right of the textbox, the following would be 
 ## More resources
 
 * **Sample form**   
-[Download sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form.xlsx)  
+[Download sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx)  
 
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
