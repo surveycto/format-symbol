@@ -25,7 +25,7 @@ This field plug-in requires the `decimal` field type.
 
 **To use this plug-in as-is**
 
-1. Download the [sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the [sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx) from this repo and upload it to your SurveyCTO server.
 1. Download the [format-symbol.fieldplugin.zip](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
 
 ### Parameters
@@ -56,7 +56,7 @@ To display a percent symbol on the right of the textbox, the following would be 
 ## More resources
 
 * **Sample form**   
-[Download sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form.xlsx)  
+[Download sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx)  
 
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
