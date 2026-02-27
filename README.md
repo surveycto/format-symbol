@@ -6,7 +6,9 @@
 
 This field plug-in is designed to display a symbol either before or after an input field. It was developed for a field plug-in development demonstration for beginners which you can learn more about in this [recorded webinar](https://www.surveycto.com/videos/plugin-dev-webinar/) and in [this Support Center article](https://support.surveycto.com/hc/en-us/articles/360063734953).
 
-[![Download now](extras/download-button.png)](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip)
+If you're looking for more advanced symbol formatting capabilities with flexible layout options, precise control over placement and sizing, you might want to check out the [format-symbol-advanced](https://github.com/surveycto/format-symbol-advanced) plug-in instead, which extends the functionality of this basic format-symbol field plug-in.
+
+[![Download now](extras/download-button.png)](https://github.com/surveycto/format-symbol/raw/main/format-symbol.fieldplugin.zip)
 
 ### Features
 
@@ -25,8 +27,8 @@ This field plug-in requires the `decimal` field type.
 
 **To use this plug-in as-is**
 
-1. Download the [sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx) from this repo and upload it to your SurveyCTO server.
-1. Download the [format-symbol.fieldplugin.zip](https://github.com/surveycto/format-symbol/raw/master/format-symbol.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
+1. Download the [sample form](https://github.com/surveycto/format-symbol/raw/main/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the [format-symbol.fieldplugin.zip](https://github.com/surveycto/format-symbol/raw/main/format-symbol.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
 
 ### Parameters
 
@@ -56,7 +58,7 @@ To display a percent symbol on the right of the textbox, the following would be 
 ## More resources
 
 * **Sample form**   
-[Download sample form](https://github.com/surveycto/format-symbol/raw/master/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx)  
+[Download sample form](https://github.com/surveycto/format-symbol/raw/main/extras/sample-form/Sample%20form%20-%20Format%20symbol%20field%20plug-in.xlsx)  
 
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
